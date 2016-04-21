@@ -1,5 +1,6 @@
 # store-saga-issue
 
+```
 npm install -g typescript
 npm install -g ionic@beta
 
@@ -8,3 +9,4 @@ npm install
 ionic serve --lab
 
 http://localhost:8100
+```
