@@ -1,0 +1,14 @@
+<ion-navbar *navbar>
+  <ion-title>Tab 1</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+  <ion-list>
+    <button ion-item (click)="increment()">Increment</button>
+    <button ion-item (click)="decrement()">Decrement</button>
+  </ion-list>
+  
+  <ion-card padding>
+    <ion-label>Value of Counter is {{counter | async}} </ion-label>
+  </ion-card>
+</ion-content>
