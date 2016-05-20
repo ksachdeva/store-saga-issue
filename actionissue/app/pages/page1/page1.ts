@@ -9,22 +9,22 @@ import {APP_PROVIDERS} from './../../store';
 
 @Page({
   templateUrl: 'build/pages/page1/page1.html',
- // providers: [...APP_PROVIDERS]
+  // providers: [...APP_PROVIDERS]
 })
 export class Page1 {
-counter: Observable<number>;
+  counter: Observable<number>;
 
   constructor(
     private store: Store<any>) {
-	  this.counter = store.select<number>('counter');
+    this.counter = store.select<number>('counter');
   }
-  
+
   increment() {
     this.store.dispatch({
       type: actions.INCREMENT
     });
   }
-  
+
   decrement() {
     this.store.dispatch({
       type: actions.DECREMENT

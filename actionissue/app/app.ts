@@ -5,7 +5,7 @@ import {TabsPage} from './pages/tabs/tabs';
 import {APP_PROVIDERS} from './store';
 
 // http://screencast.com/t/T2FZE8TTwCl
-// http://screencast.com/t/hBGHC0ZO 
+// http://screencast.com/t/hBGHC0ZO
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
@@ -16,7 +16,7 @@ export class MyApp {
   rootPage: any = TabsPage;
 
   constructor(platform: Platform) {
-    platform.ready().then(() => {      
+    platform.ready().then(() => {
       StatusBar.styleDefault();
     });
   }
